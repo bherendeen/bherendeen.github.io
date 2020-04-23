@@ -4,32 +4,34 @@
 <head>
     <meta charset="utf-8">
     <title>Course Portal | Benjamin Herendeen</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            background-color: rgb(15, 118, 122);
-        }
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <header>
-        <h1>Benjamin Herendeen</h1>
-    </header>
-    <main>
-        <section>
-            <h2>CIT 230: Assignment Portal</h2>
-            <hr>
-            <img src="img/ben-and-wife.jpg" alt="Benjamin Herendeen photo">
-            <ul>
-                <li>Lesson one: <a href="#">Assignment Link</a></li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <span>&copy; | Benjamin Herendeen | Utah | </span>
-        <a href="" target="_blank" rel="noopener noreferrer">BYUI Online Learning</a>
-    </footer>
+    <div class="container">
+        <header>
+            <h1>Benjamin Herendeen</h1>
+        </header>
+        <main>
+            <section>
+                <h2>CIT 230: Assignment Portal</h2>
+                <hr>
+                <img src="img/ben-and-wife.jpg" alt="Benjamin Herendeen photo">
+                <ul>
+                    <li>Lesson one: <a href="#">Assignment Link</a></li>
+                    <li>Lesson two: <a href="#">Assignment Link</a></li>
+                    <li>Lesson three: <a href="#">Assignment Link</a></li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; <span id="year"></span> | Benjamin Herendeen | Utah |
+                <a href="https://www.byui.edu/online" target="_blank" rel="noopener noreferrer">BYUI Online Learning</a>
+            </p>
+            <p>Last updated: <span id="lastModified"></span></p>
+        </footer>
+    </div>
+    <script src="js/date.js"></script>
 </body>
 
 </html>
