@@ -59,47 +59,45 @@ body {
 }
 
 .container {
-    margin: .25rem auto;
-    width: 800px;
-    position: relative;
+    margin: .25em auto;
+    max-width: 800px;
 }
+
+/* header */
 
 header,
 footer {
-    padding: 1rem;
+    padding: 1em;
     background-color: var(--color-primary);
     color: var(--color-white);
-    border-radius: .25rem;
-    -webkit-border-radius: .25rem;
-    -moz-border-radius: .25rem;
-    -ms-border-radius: .25rem;
-    -o-border-radius: .25rem;
     box-shadow: var(--shadow-1);
 }
 
-header h1 {
-    margin-left: 3rem;
+img {
+    display: block;
+    width: 10em;
+    height: auto;
+    box-shadow: var(--shadow-2);
+    margin-left: auto;
+    margin-right: auto;
 }
 
+h1 {
+    font-size: 1.8em;
+    text-align: center;
+}
+
+/* main */
 main {
-    padding: .5rem;
+    padding: .5em;
+}
+
+h2 {
+    font-size: 1.4em;
 }
 
 hr {
     border: .4px solid rgb(211, 211, 212);
-}
-
-main img {
-    width: 10rem;
-    height: auto;
-    box-shadow: var(--shadow-2);
-    position: absolute;
-    top: 1.5rem;
-    right: 1.5rem;
-}
-
-footer {
-    text-align: center;
 }
 
 main a:link,
@@ -109,6 +107,11 @@ main a:visited {
 
 main a:hover:hover {
     color: var(--color-accent-dark);
+}
+
+/* footer */
+footer {
+    text-align: center;
 }
 
 footer a:link,
@@ -121,5 +124,3 @@ footer a:visited {
 footer a:hover {
     color: var(--color-accent);
 }
-
-footer a:active {}
