@@ -111,6 +111,10 @@ header {
     text-align: center;
 }
 
+h1 {
+    font-size: 1.8em;
+}
+
 .shadow-2 {
     box-shadow: var(--shadow-2);
 }
@@ -141,6 +145,8 @@ footer {
     text-align: center;
 }
 
+/* links */
+
 main a:link,
 main a:visited {
     color: inherit;
@@ -161,6 +167,8 @@ footer a:hover {
     color: var(--color-accent);
 }
 
+/* responsive */
+
 @media (min-width: 32rem) {
     .grid {
         grid-template-columns: repeat(2, 1fr);
@@ -169,6 +177,10 @@ footer a:hover {
     .grid div {
         margin: var(--space-xs) 0;
         background-color: var(--color-white);
+    }
+
+    h1 {
+        font-size: 2.5em;
     }
 
     main {
