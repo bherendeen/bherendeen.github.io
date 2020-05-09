@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Weather site plan, purpose and logo design for Benjamin Herendeen in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <title>Weather Site Plan | Lesson 3</title>
+    <link rel="stylesheet" href="../lesson3/css/normalize.css">
+    <link rel="stylesheet" href="../lesson3/css/site-plan-styles.css">
+</head>
+
+<body>
+    <div class="grid container">
+        <header>
+            <div class="component-padding">
+                <img class="logo" src="../lesson3/img/forecastpin-logo-white-bg.svg" alt="Forecastpin logo">
+                <!--site plan title-->
+            </div>
+            <nav>
+                <ul class="flex">
+                    <li><a class="active" href="../lesson3/">Home</a></li>
+                    <li><a href="../lesson3/target-audience.html">Audience</a></li>
+                    <li><a href="../lesson3/color-scheme.html">Color</a></li>
+                    <li><a href="../lesson3/typography.html">Type</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="grid component-padding">
+            <h1>Site Plan - Home</h1>
+            <h2>Site Purpose</h2>
+            <article class="grid grid-gap-article">
+                <div class="article-col">
+                    <p>The purpose of forecastpin is to provide up-to-date weather forecast wherever users pin there
+                        location. The site will provide the current weather conditions such as current temperature,
+                        predicted high and low temperature, wind speed, precipitation, humidity, ten-day forecast, and
+                        predicted weather (i.e sunny, rain, snow, fog, overcast,etc.). The site will be clean and easy
+                        to
+                        use.</p>
+                </div>
+                <div class="article-col">
+                    <p>This is will allow all users, no matter their skill level of technology, to use the site with
+                        ease. It will be responsive so users will be able to access it’s content no matter what device
+                        is
+                        used. This weather information will help users determine and schedule their daily activities
+                        according to the forecast in their area.</p>
+                </div>
+            </article>
+            <h2>Logo</h2>
+            <section class="grid grid-gap-1">
+                <div class="logo-col">
+                    <figure>
+                        <img class="img-responsive hover-scale" src="../lesson3/img/forecastpin-logo-white-bg.jpg"
+                            alt="Forecastpin logo on white background">
+                        <figcaption>Logo | White background</figcaption>
+                    </figure>
+                </div>
+                <div class="logo-col">
+                    <figure>
+                        <img class="img-responsive hover-scale" src="../lesson3/img/forecastpin-logo-black-bg.jpg"
+                            alt="Forecastpin logo on black background">
+                        <figcaption>Logo | Black background</figcaption>
+                    </figure>
+                </div>
+                <div class="logo-col">
+                    <figure>
+                        <img class="img-responsive hover-scale" src="../lesson3/img/forecastpin-logo-blue-bg.jpg"
+                            alt="Forecastpin logo on blue background">
+                        <figcaption>Logo | Blue background</figcaption>
+                    </figure>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="flex component-padding">
+                <p>&copy; <span id="year"></span> | Benjamin Herendeen | Utah |
+                    <a href="https://www.byui.edu/online" target="_blank" rel="noopener noreferrer">BYUI Online
+                        Learning</a>
+                </p>
+                <p>Last updated: <span id="lastModified"></span></p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../lesson3/js/date.js"></script>
+</body>
+
+</html>
