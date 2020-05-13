@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Weather site, Preston, Idaho page for Benjamin Herendeen in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <title>Weather Site | Preston Idaho | Lesson 4</title>
+    <link rel="stylesheet" href="../lesson4/css/normalize.css">
+    <link rel="stylesheet" href="../lesson4/css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 221 317.1">
+                <path class="pin"
+                    d="M110.5 13.9C54.7 13.9 9.2 59.3 9.2 115.2c0 75.9 101.3 188 101.3 188s101.3-112.1 101.3-188c0-55.9-45.4-101.3-101.3-101.3z" />
+                <path class="cloud"
+                    d="M154.9 84.1c-4.2-20.8-22.4-36.4-44.4-36.4-17.4 0-32.5 9.9-40.1 24.3-18.1 1.9-32.2 17.3-32.2 35.9 0 19.9 16.2 36.2 36.2 36.2h78.3c16.6 0 30.1-13.5 30.1-30.1.1-16-12.3-28.9-27.9-29.9z" />
+            </svg>
+            <section class="header">
+                <h1>Forecastpin</h1>
+                <small>Pin your forecast</small>
+            </section>
+        </header>
+        <nav>
+            <ul class="nav">
+                <li class="ham">&#9776;</li>
+                <li><a href="#">Home</a></li>
+                <li><a class="active" href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+        <main class="component-padding">
+            <section>
+                <h2>Preston, Idaho</h2>
+                <div class="content">Hero w/ Weather Summary</div>
+                <div class="content">5-day forecast</div>
+                <div class="content">Article</div>
+                <div class="content">Contact Info</div>
+            </section>
+        </main>
+        <footer>
+            <div class="flex component-padding">
+                <p>&copy; <span id="year"></span> | Benjamin Herendeen | Utah |
+                    <a href="https://www.byui.edu/online" target="_blank" rel="noopener noreferrer">BYUI Online
+                        Learning</a>
+                </p>
+                <p>Last updated: <span id="lastModified"></span></p>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="../lesson4/js/date.js"></script>
+    <script src="../lesson4/js/menu.js"></script>
+</body>
+
+</html>
