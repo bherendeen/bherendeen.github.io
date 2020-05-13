@@ -1,0 +1,13 @@
+@media only screen and (min-width: 64rem) {
+
+    main,
+    footer {
+        max-width: var(--breakpoint-md);
+    }
+
+    nav ul {
+        max-width: var(--breakpoint-md);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
