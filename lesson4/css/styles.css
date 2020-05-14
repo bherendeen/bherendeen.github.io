@@ -162,15 +162,34 @@ header {
     padding: var(--space-xs) 0;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .header {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.header h1,
+.header small {
+    color: var(--color-white);
+}
+
+.header h1 {
+    font-size: var(--text-xxl);
+}
+
+.header h1 {
+    margin: 0 var(--space-md) 0 var(--space-xs);
+}
+
+.header small {
+    margin: 0 var(--space-md) 0 var(--space-md);
 }
 
 .logo {
-    padding: var(--space-md) 0;
+    margin: var(--space-md) var(--space-xs) var(--space-md) var(--space-md);
     max-width: 2rem;
     height: auto;
 }

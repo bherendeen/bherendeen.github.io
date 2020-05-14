@@ -1,33 +1,8 @@
 @media only screen and (min-width: 48rem) {
 
     header {
-        justify-content: flex-start;
         padding-left: var(--space-md);
     }
-
-    .header {
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-    }
-
-    .header h1,
-    .header small {
-        color: var(--color-white);
-    }
-
-    .header h1 {
-        font-size: var(--text-xxl);
-    }
-
-    .header h1 {
-        margin: 0 var(--space-md) 0 var(--space-xs);
-    }
-
-    .header small {
-        margin: 0 var(--space-md) 0 var(--space-md);
-    }
-
 
     nav {
         max-width: 100%;
