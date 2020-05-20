@@ -401,6 +401,7 @@ address {
 }
 
 .map {
+    display: none;
     grid-column: span 12;
     margin-top: var(--space-md);
     box-shadow: var(--shadow-2);
