@@ -280,9 +280,9 @@ nav a.active {
 // main
 
 -------------------- */
-h2 {
+section h2 {
     text-align: center;
-    margin: var(--space-lg);
+    margin-top: var(--space-lg);
 }
 
 /* hero */
@@ -345,7 +345,6 @@ article {
 article h2,
 .contact h2 {
     text-align: left;
-    margin: var(--space-xxxs) 0;
 }
 
 article img {
@@ -358,8 +357,9 @@ article img {
     background-color: var(--color-contrast-lower);
 }
 
+article h2,
 .contact h2 {
-    margin-bottom: var(--space-md);
+    margin-top: var(--space-md);
 }
 
 .contact-social {
