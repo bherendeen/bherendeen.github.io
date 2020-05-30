@@ -1,6 +1,8 @@
-// dates
-document.getElementById('year').textContent = new Date().getFullYear();
-document.getElementById("lastModified").textContent = document.lastModified;
+// current date
+let date = new Date();
+let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+let month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+document.getElementById("currentDate").innerHTML = days[date.getDay()] + ", " + date.getDate() + " " + month[date.getMonth()] + " " + date.getFullYear();
 
 // menu
 const hamBtn = document.querySelector('.ham');
