@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#222222">
+    <meta name="description" content="Weather gallery page for Benjamin Herendeen in WDD 230: Web Frontend Development at
+        Brigham Young University - Idaho">
+    <title>Weather Gallery | Lesson 7</title>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../favicomatic/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="../favicomatic/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="../favicomatic/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="../favicomatic/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="../favicomatic/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="../favicomatic/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../favicomatic/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="../favicomatic/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="../favicomatic/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="../favicomatic/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="../favicomatic/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../favicomatic/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="../favicomatic/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+</head>
+
+<body>
+    <div class="notice" id="notice">
+        <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+    </div>
+    <header>
+        <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 221 317.1">
+            <path class="pin"
+                d="M110.5 13.9C54.7 13.9 9.2 59.3 9.2 115.2c0 75.9 101.3 188 101.3 188s101.3-112.1 101.3-188c0-55.9-45.4-101.3-101.3-101.3z" />
+            <path class="cloud"
+                d="M154.9 84.1c-4.2-20.8-22.4-36.4-44.4-36.4-17.4 0-32.5 9.9-40.1 24.3-18.1 1.9-32.2 17.3-32.2 35.9 0 19.9 16.2 36.2 36.2 36.2h78.3c16.6 0 30.1-13.5 30.1-30.1.1-16-12.3-28.9-27.9-29.9z" />
+        </svg>
+        <section class="header">
+            <h1>Forecastpin</h1>
+            <small>Pin your forecast</small>
+        </section>
+    </header>
+    <nav>
+        <ul class="nav">
+            <li class="ham">&#9776;</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a class="active" href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <div class="container component-padding">
+        <main>
+            <h1>Weather Gallery</h1>
+            <div class="grid grid-gap">
+                <div>
+                    <picture>
+                        <img src="https://placehold.co/300x400/jpg" data-src='img/fog.jpg' alt="">
+                    </picture>
+                    <p>Fog in mountain valley</p>
+                </div>
+                <div>
+                    <picture>
+                        <img src="https://placehold.co/300x400/jpg" data-src='img/rain.jpg' alt="">
+                    </picture>
+                    <p>Rain falling in city park</p>
+                </div>
+                <div>
+                    <picture>
+                        <img src="https://placehold.co/300x400/jpg" data-src='img/sunshine.jpg' alt="">
+                    </picture>
+                    <p>Sun shining through clouds</p>
+                </div>
+                <div>
+                    <picture>
+                        <img src="https://placehold.co/300x400/jpg" data-src='img/tornado.jpg' alt="">
+                    </picture>
+                    <p>Tornado moving across field</p>
+                </div>
+                <div>
+                    <picture>
+                        <img src="https://placehold.co/300x400/jpg" data-src='img/lightning.jpg' alt="">
+                    </picture>
+                    <p>Lightning streaking across sky</p>
+                </div>
+                <div>
+                    <picture>
+                        <img src="https://placehold.co/300x400/jpg" data-src='img/snow.jpg' alt="">
+                    </picture>
+                    <p>Snow covered trees and mountain side</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <div class="flex component-padding">
+            <p>&copy; <span id="year"></span> | Benjamin Herendeen | Utah |
+                <a href="https://www.byui.edu/online" target="_blank" rel="noopener noreferrer">BYUI Online
+                    Learning</a>
+            </p>
+            <p><span id="currentDate"></span></p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/styles.js"></script>
+    <script src="js/lazyload.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Roboto']
+            }
+        });
+    </script>
+</body>
+
+</html>
