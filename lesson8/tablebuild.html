@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#222222">
+    <meta name="description" content="Table example page for Benjamin Herendeen in WDD 230: Web Frontend Development at
+        Brigham Young University - Idaho">
+    <title>Table Example | Lesson 8</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/table-styles.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <table>
+            <caption>ACME Wildwest</caption>
+            <thead>
+                <tr>
+                    <td>Period</td>
+                    <td>Sales</td>
+                    <td>Sales Goal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>August</td>
+                    <td>&#36;3,590</td>
+                    <td>&#36;4,000</td>
+                </tr>
+                <tr>
+                    <td>September</td>
+                    <td>&#36;4,420</td>
+                    <td>&#36;5,000</td>
+                </tr>
+                <tr>
+                    <td>October</td>
+                    <td>&#36;4,870</td>
+                    <td>&#36;5,000</td>
+                </tr>
+                <tr>
+                    <td>November</td>
+                    <td>&#36;8,610</td>
+                    <td class="slate">&#36;7,500</td>
+                </tr>
+                <tr>
+                    <td><em>Black Friday</em></td>
+                    <td colspan="2">&#36;3,200</td>
+                </tr>
+                <tr>
+                    <td>December</td>
+                    <td>&#36;6,820</td>
+                    <td>&#36;7,500</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Compiled 6.8.2020 by BHerendeen</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Ubuntu']
+            }
+        });
+    </script>
+</body>
+
+</html>
