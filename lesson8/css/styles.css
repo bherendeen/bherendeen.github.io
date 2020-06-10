@@ -490,16 +490,21 @@ div.grid-full.sky-bg {
     margin-bottom: var(--space-xs);
 }
 
-button {
+a.btn {
+    display: block;
+    margin: var(--space-lg) 0;
+}
+
+.btn {
     background-color: var(--color-primary);
     color: var(--color-white);
     border: 0;
     outline: 0;
     max-width: 100%;
-    margin: var(--space-lg) 0;
     padding: var(--space-sm) var(--space-md);
     text-transform: uppercase;
     font-weight: var(--text-bold);
+    text-decoration: none;
     box-shadow: var(--shadow-2);
     cursor: pointer;
     transition: .1s;
@@ -514,11 +519,11 @@ button {
     -o-border-radius: 0.25rem;
 }
 
-button:hover {
+.btn:hover {
     background-color: var(--color-primary-light);
 }
 
-button:active {
+.btn:active {
     box-shadow: var(--shadow-1);
 }
 
