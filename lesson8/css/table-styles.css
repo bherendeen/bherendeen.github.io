@@ -123,7 +123,7 @@ table {
 table * {
     text-align: center;
     border: 1px solid var(--color-contrast-low);
-    padding: var(--space-md);
+    padding: var(--space-sm);
 }
 
 table tbody em {
