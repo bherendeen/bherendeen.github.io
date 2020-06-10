@@ -73,6 +73,8 @@
     --space-xxxl: calc(8.5 * var(--space-unit));
     --space-xxxxl: calc(13.75 * var(--space-unit));
     --component-padding: var(--space-md);
+    --component-padding-x: 0 var(--space-md);
+    --component-padding-y: var(--space-md) 0;
 
     /* breakpoints */
     --breakpoint-xs: 32rem;
@@ -124,6 +126,14 @@ svg {
 
 .component-padding {
     padding: var(--component-padding);
+}
+
+.component-padding-x {
+    padding: var(--component-padding-x);
+}
+
+.component-padding-y {
+    padding: var(--component-padding-y);
 }
 
 /* --------------------
