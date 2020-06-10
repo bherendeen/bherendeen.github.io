@@ -3,8 +3,7 @@
 /* 1024 */
     {
 
-    main,
-    footer {
+    main {
         max-width: var(--width-md);
     }
 

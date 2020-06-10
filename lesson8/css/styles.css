@@ -144,6 +144,11 @@ svg {
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
+.grid-full {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0px, 8.33%));
+}
+
 .grid-gap {
     gap: var(--component-padding);
 }
@@ -290,6 +295,10 @@ nav a.active {
 
 -------------------- */
 
+.sky-bg {
+    background-color: rgb(210, 239, 255);
+}
+
 main {
     max-width: var(--width-md);
     margin: 0 auto;
@@ -434,7 +443,7 @@ input[type=submit] {
     color: var(--color-white);
     border: 0;
     width: 100%;
-    margin-top: var(--space-xl);
+    margin: var(--space-xl) 0;
     padding: var(--space-sm);
     text-transform: uppercase;
     font-weight: var(--text-bold);
@@ -455,14 +464,30 @@ input[type="submit"]:active {
     box-shadow: var(--shadow-1);
 }
 
+div.grid-full.sky-bg {
+    margin: var(--space-xl) auto;
+    max-width: var(--width-sm);
+    box-shadow: var(--shadow-2);
+}
+
+.cloud-top,
+.cloud-bottom {
+    grid-column: span 12;
+}
+
+.grid-full div.thankYou {
+    grid-column: span 12;
+}
+
 .thankYou {
     max-width: var(--width-xs);
-    margin: var(--space-xxxl) auto;
+    margin: var(--space-lg) auto;
     text-align: center;
 }
 
 .thankYou h2 {
     font-size: var(--text-xxxxl);
+    margin-bottom: var(--space-xs);
 }
 
 button {
@@ -471,7 +496,7 @@ button {
     border: 0;
     outline: 0;
     max-width: 100%;
-    margin-top: var(--space-xl);
+    margin: var(--space-lg) 0;
     padding: var(--space-sm) var(--space-md);
     text-transform: uppercase;
     font-weight: var(--text-bold);
@@ -503,9 +528,13 @@ button:active {
 
 -------------------- */
 footer {
-    margin-top: var(--space-xl);
     background-color: var(--color-primary);
     color: var(--color-white);
+}
+
+footer>div {
+    max-width: var(--width-md);
+    margin: 0 auto;
 }
 
 footer div {
