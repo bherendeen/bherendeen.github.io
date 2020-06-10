@@ -458,6 +458,7 @@ input[type="submit"]:active {
 .thankYou {
     max-width: var(--width-xs);
     margin: var(--space-xxxl) auto;
+    text-align: center;
 }
 
 .thankYou h2 {
@@ -469,9 +470,9 @@ button {
     color: var(--color-white);
     border: 0;
     outline: 0;
-    width: 100%;
+    max-width: 100%;
     margin-top: var(--space-xl);
-    padding: var(--space-sm);
+    padding: var(--space-sm) var(--space-md);
     text-transform: uppercase;
     font-weight: var(--text-bold);
     box-shadow: var(--shadow-2);
