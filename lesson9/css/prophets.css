@@ -152,11 +152,8 @@ img {
 
 footer {
     background-color: var(--color-primary);
-    padding: var(--space-md) 0;
+    padding: var(--space-lg) 0;
     margin-top: var(--space-xl);
-}
-
-footer p {
     text-align: center;
     color: var(--color-white);
 }
