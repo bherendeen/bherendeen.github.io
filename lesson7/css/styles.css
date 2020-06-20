@@ -307,9 +307,13 @@ picture img {
 
 -------------------- */
 footer {
-    margin-top: var(--space-xl);
     background-color: var(--color-primary);
     color: var(--color-white);
+}
+
+footer>div {
+    max-width: var(--width-md);
+    margin: 0 auto;
 }
 
 footer div {
