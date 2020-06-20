@@ -52,6 +52,7 @@
         -o-border-radius: .2rem;
     }
 
+
     .summary h3 {
         font-size: var(--text-lg);
     }
@@ -114,8 +115,7 @@
         margin-top: 0;
     }
 
-    main,
-    footer {
+    main {
         max-width: var(--width-md);
         margin-left: auto;
         margin-right: auto;
