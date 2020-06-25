@@ -1,0 +1,15 @@
+@media only screen and (min-width: 64rem)
+
+/* 1024 */
+    {
+
+    main {
+        max-width: var(--width-md);
+    }
+
+    nav ul {
+        max-width: var(--width-md);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
