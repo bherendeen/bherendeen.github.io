@@ -24,7 +24,7 @@ fetch(apiURL)
             document.getElementById(`temp${i + 1}`).innerHTML = `${fiveDayForecast.main.temp.toFixed(0)}&deg;F`;
             document.getElementById(`day${i + 1}`).textContent = daysOfWeek[d.getDay()];
             const imagesrc = `https://openweathermap.org/img/wn/${fiveDayForecast.weather[0].icon}@2x.png`;
-            const desc = fiveDayForecast.weather.description;
+            const desc = fiveDayForecast.weather[0].description;
             document.getElementById(`icon${i + 1}`).setAttribute('src', imagesrc);
             document.getElementById(`icon${i + 1}`).setAttribute('alt', desc);
             i++;
