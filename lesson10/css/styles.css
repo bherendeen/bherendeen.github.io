@@ -334,6 +334,10 @@ section h2 {
     display: none;
 }
 
+.forecast li p:first-of-type {
+    font-weight: var(--text-bold);
+}
+
 /* article */
 
 article {
