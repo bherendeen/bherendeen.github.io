@@ -107,6 +107,10 @@
         justify-content: center;
         align-content: center;
     }
+    
+    .contact-info span {
+        font-size: var(--text-base);
+    }
 
     .map {
         display: block;
