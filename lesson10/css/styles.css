@@ -381,6 +381,7 @@ address {
 
 .contact-info span {
     line-height: 0;
+    font-size: var(--text-sm);
 }
 
 .social {
