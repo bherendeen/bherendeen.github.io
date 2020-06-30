@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#222222">
+    <meta name="description" content="Storm center page for Benjamin Herendeen in WDD 230: Web Frontend Development at
+        Brigham Young University - Idaho">
+    <title>Storm Center | Lesson 8</title>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../favicomatic/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="../favicomatic/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="../favicomatic/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="../favicomatic/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="../favicomatic/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="../favicomatic/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../favicomatic/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="../favicomatic/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="../favicomatic/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="../favicomatic/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="../favicomatic/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../favicomatic/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="../favicomatic/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/table-styles.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+</head>
+
+<body>
+    <div class="notice" id="notice">
+        <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+    </div>
+    <header>
+        <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 221 317.1">
+            <path class="pin"
+                d="M110.5 13.9C54.7 13.9 9.2 59.3 9.2 115.2c0 75.9 101.3 188 101.3 188s101.3-112.1 101.3-188c0-55.9-45.4-101.3-101.3-101.3z" />
+            <path class="cloud"
+                d="M154.9 84.1c-4.2-20.8-22.4-36.4-44.4-36.4-17.4 0-32.5 9.9-40.1 24.3-18.1 1.9-32.2 17.3-32.2 35.9 0 19.9 16.2 36.2 36.2 36.2h78.3c16.6 0 30.1-13.5 30.1-30.1.1-16-12.3-28.9-27.9-29.9z" />
+        </svg>
+        <section class="header">
+            <h1>Forecastpin</h1>
+            <small>Pin your forecast</small>
+        </section>
+    </header>
+    <nav>
+        <ul class="nav">
+            <li class="ham">&#9776;</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a class="active" href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <main>
+            <form class="flex flex-column" method="GET" action="thanks.html" autocomplete="on">
+                <h2>Report Weather Near You</h2>
+                <p>If weather is happening near you, we'd like to hear about it.</p>
+                <hr>
+                <fieldset class="flex flex-column">
+                    <label>Full Name<span>*</span>
+                        <input type="text" name="name" placeholder="Your full name"
+                            pattern="[A-Za-z]{2,}\s[A-Za-z]{3,}|[A-Za-z]{3,}\s[A-Za-z]{2,}" required><small>Please
+                            insert your first and last name. Must be at least five characters.</small>
+                    </label>
+                    <label>Email
+                        <input type="email" name="email" placeholder="email@myemail.com">
+                    </label>
+                    <label>Phone<span>*</span>
+                        <input type="tel" name="phone" placeholder="1235556789" required>
+                    </label>
+                    <label>Zip Code<span>*</span>
+                        <input type="number" name="zip" placeholder="Your Zip Code" required>
+                    </label>
+                </fieldset>
+                <fieldset class="flex flex-column">
+                    <label>Date of Storm
+                        <input type="date" name="stormDate">
+                    </label>
+                    <label>Type of Storm
+                        <input name="stormType" list="stormType">
+                        <datalist id="stormType">
+                            <option value="Flash Flood">
+                            <option value="Hail">
+                            <option value="Hurricane">
+                            <option value="Thunderstorm">
+                            <option value="Tornado">
+                        </datalist>
+                    </label>
+                    <label for="rating">Storm Rating
+                        <input type="range" id="rating" value="1" min="1" max="10" step="1" list="rangeMarks"
+                            oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id="ratingValue">1</span>
+                    </label>
+                    <datalist id="rangeMarks">
+                        <option value="0">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                        <option value="6">
+                        <option value="7">
+                        <option value="8">
+                        <option value="9">
+                        <option value="10">
+                    </datalist>
+                    <label>Storm Region
+                        <select name="stormRegion">
+                            <option value="" disabled selected>Select Region</option>
+                            <option value="Fish Haven">Fish Haven</option>
+                            <option value="Preston">Preston</option>
+                            <option value="Soda Springs">Soda Springs</option>
+                        </select>
+                    </label>
+                </fieldset>
+                <fieldset class="flex flex-column">
+                    <p>Public in-danger</p>
+                    <label>
+                        <input type="radio" name="publicDanger" value="yes">
+                        Yes
+                    </label>
+                    <label>
+                        <input type="radio" name="publicDanger" value="maybe">
+                        Maybe
+                    </label>
+                    <label>
+                        <input type="radio" name="publicDanger" value="no">
+                        No
+                    </label>
+                </fieldset>
+                <label>Comments
+                    <textarea placeholder="Please tell us any other information you'd like us to know"></textarea>
+                </label>
+                <input class="btn" type="submit" value="Report Weather">
+            </form>
+        </main>
+    </div>
+    <footer>
+        <div class="flex component-padding">
+            <p>&copy; <span id="year"></span> | Benjamin Herendeen | Utah |
+                <a href="https://www.byui.edu/online" target="_blank" rel="noopener noreferrer">BYUI Online
+                    Learning</a>
+            </p>
+            <p><span id="currentDate"></span></p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/styles.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Roboto']
+            }
+        });
+
+        function adjustRating(rating) {
+            document.getElementById("ratingValue").innerHTML = rating;
+        }
+    </script>
+</body>
+
+</html>
