@@ -22,7 +22,7 @@ if (dayOfWeek == 5) {
     document.getElementById("notice").style.display = 'none';
 }
 
-const apiURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=f5ff7b7b38b67404ea7851c0ce715ab3';
+const apiURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5585010&units=imperial&APPID=f5ff7b7b38b67404ea7851c0ce715ab3';
 
 fetch(apiURL)
     .then((response) => response.json())
@@ -81,11 +81,11 @@ fetch(requestURL)
     .then(function (jsonObject) {
         //console.table(jsonObject); // temporary checking for valid response and data parsing
         const towns = jsonObject['towns'];
-        const preston = towns.filter(towns => (towns.name == 'Preston'));
-        const prestonEvents = preston[0].events;
+        const fishHaven = towns.filter(towns => (towns.name == 'Fish Haven'));
+        const fishHavenEvents = fishHaven[0].events;
 
         let unorderedList = "<ul>";
-        prestonEvents.forEach(eventFunction);
+        fishHavenEvents.forEach(eventFunction);
         unorderedList += "</ul>";
         document.querySelector(".events").innerHTML = unorderedList;
 
