@@ -40,6 +40,7 @@ fetch(requestURL)
             containerImg.appendChild(image);
 
             document.querySelector('div.cards').appendChild(card);
+
         });
 
     });

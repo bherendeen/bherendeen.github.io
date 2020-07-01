@@ -246,7 +246,7 @@ nav ul li.ham:hover {
     display: none;
     color: var(--color-white);
     border-bottom: 1px solid rgba(0, 0, 0, 0.20);
-    text-transform: uppercase;
+    letter-spacing: 1.5px;
 }
 
 .nav a {
