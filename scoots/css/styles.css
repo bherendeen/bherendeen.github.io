@@ -119,6 +119,12 @@
 }
 
 /* general */
+html,
+body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
 html {
     font-size: var(--text-base);
     text-size-adjust: 100%;
@@ -129,7 +135,6 @@ html {
 body {
     background-color: var(--color-bg);
     color: var(--color-black);
-    overflow-x: hidden !important;
 }
 
 img,
@@ -148,7 +153,6 @@ nav {
     min-height: 10vh;
     background-color: var(--color-primary);
     overflow-x: hidden;
-
 }
 
 .logo {
@@ -204,7 +208,6 @@ nav {
     nav {
         justify-content: space-between;
         padding: 0 var(--space-lg);
-
     }
 
     .burger {
@@ -219,21 +222,22 @@ nav {
         display: flex;
         position: absolute;
         top: 10vh;
-        right: 0;
+        left: 0;
         height: 90vh;
-        width: 50%;
+        min-width: 100%;
         flex-direction: column;
         align-items: center;
-        transform: translateX(100%);
-        -webkit-transform: translateX(100%);
-        -moz-transform: translateX(100%);
-        -ms-transform: translateX(100%);
-        -o-transform: translateX(100%);
+        transform: translateY(-100%);
+        -webkit-transform: translateY(-100%);
+        -moz-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        -o-transform: translateY(-100%);
         transition: transform .5s ease-in;
         -webkit-transition: transform .5s ease-in;
         -moz-transition: transform .5s ease-in;
         -ms-transition: transform .5s ease-in;
         -o-transition: transform .5s ease-in;
+        z-index: -1;
     }
 
     .nav-links li {
@@ -243,18 +247,18 @@ nav {
 
 @media only screen and (max-width: 64rem) {
     .nav-links {
-        width: 50%;
+        width: 100%;
         max-width: var(--width-xs);
     }
 }
 
 .nav-active {
-    width: 50%;
-    transform: translateX(0%);
-    -webkit-transform: translateX(0%);
-    -moz-transform: translateX(0%);
-    -ms-transform: translateX(0%);
-    -o-transform: translateX(0%);
+    width: 100%;
+    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
 }
 
 @keyframes navLinkFade {
