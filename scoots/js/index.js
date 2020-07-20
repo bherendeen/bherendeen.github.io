@@ -36,7 +36,6 @@ fetch(apiURL)
 
         const forecast = jsObject.list.filter(x => x.dt_txt.includes("12:00:00"));
         const daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-        console.log(forecast);
         let i = 0;
         forecast.forEach(fiveDayForecast => {
             let d = new Date(fiveDayForecast.dt_txt);
