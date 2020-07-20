@@ -1,0 +1,99 @@
+{
+    "rentals": [{
+            "name": "Honda Metro Scooter",
+            "maxPerson": 1,
+            "ccEngine": 49,
+            "transmission": "Automatic",
+            "color": "Yellow",
+            "reservation": [{
+                "halfDay": 20,
+                "fullDay": 30
+            }],
+            "walkIn": [{
+                "halfDay": 25,
+                "fullDay": 35
+            }],
+            "imageurl": "scooter1"
+        },
+        {
+            "name": "Honda Dio Scooter",
+            "maxPerson": 2,
+            "ccEngine": 110,
+            "transmission": "Automatic",
+            "color": "Blue",
+            "reservation": [{
+                "halfDay": 30,
+                "fullDay": 40
+            }],
+            "walkIn": [{
+                "halfDay": 35,
+                "fullDay": 45
+            }],
+            "imageurl": "scooter2"
+        },
+        {
+            "name": "Honda PCX150 Scooter",
+            "maxPerson": 2,
+            "ccEngine": 149,
+            "transmission": "Automatic",
+            "color": "Blue",
+            "reservation": [{
+                "halfDay": 40,
+                "fullDay": 50
+            }],
+            "walkIn": [{
+                "halfDay": 45,
+                "fullDay": 55
+            }],
+            "imageurl": "scooter3"
+        },
+        {
+            "name": "Honda Pioneer ATV",
+            "maxPerson": 4,
+            "ccEngine": 999,
+            "transmission": "Automatic",
+            "color": "Red/Black",
+            "reservation": [{
+                "halfDay": 50,
+                "fullDay": 70
+            }],
+            "walkIn": [{
+                "halfDay": 60,
+                "fullDay": 80
+            }],
+            "imageurl": "atv"
+        },
+        {
+            "name": "Jeep Wrangler - 4 door",
+            "maxPerson": 5,
+            "engine": 250,
+            "transmission": "Manual",
+            "color": "Black",
+            "reservation": [{
+                "halfDay": 70,
+                "fullDay": 100
+            }],
+            "walkIn": [{
+                "halfDay": 85,
+                "fullDay": 125
+            }],
+            "imageurl": "jeep4"
+        },
+        {
+            "name": "Jeep Wrangler - 2 door",
+            "maxPerson": 4,
+            "engine": 250,
+            "transmission": "Manual",
+            "color": "Black",
+            "reservation": [{
+                "halfDay": 60,
+                "fullDay": 85
+            }],
+            "walkIn": [{
+                "halfDay": 70,
+                "fullDay": 90
+            }],
+            "imageurl": "jeep2"
+        }
+    ]
+}

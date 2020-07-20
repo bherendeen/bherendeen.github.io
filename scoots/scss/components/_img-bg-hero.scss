@@ -1,0 +1,173 @@
+// hero image
+.img-bg {
+    grid-column: span 12;
+    min-height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../img/beach-2500x1667-xxl2.jpg') no-repeat;
+    background-size: cover;
+}
+
+.hero-img-txt {
+    grid-column: 2 / span 6;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: flex-start;
+
+    h1,
+    p {
+        color: var(--color-white);
+    }
+
+    h1 {
+        font-size: var(--text-display-1);
+        font-weight: var(--text-bold);
+        margin: var(--space-xxxs) 0;
+        text-transform: uppercase;
+        line-height: .85;
+        text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    }
+
+    p {
+        font-size: var(--text-lg);
+        line-height: 1;
+        margin: var(--space-xs) 0 var(--space-md);
+        text-shadow: 0px 0px 35px rgba(0, 0, 0, 0.25);
+    }
+
+    .btn {
+        background-color: var(--color-white);
+        color: var(--color-black);
+        opacity: .8;
+        transition: .3s;
+        -webkit-transition: .3s;
+        -moz-transition: .3s;
+        -ms-transition: .3s;
+        -o-transition: .3s;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+.current-weather {
+    grid-column: 9 / span 3;
+    justify-content: center;
+
+    &>div {
+        min-height: 0;
+        width: 100%;
+        background-color: var(--color-white);
+        border: 2px solid var(--color-white);
+        padding: var(--component-padding);
+        border-radius: var(--radius-sm);
+        -webkit-border-radius: var(--radius-sm);
+        -moz-border-radius: var(--radius-sm);
+        -ms-border-radius: var(--radius-sm);
+        -o-border-radius: var(--radius-sm);
+    }
+
+    span {
+        font-size: var(--text-md);
+        text-align: center;
+        width: 100%;
+        padding: var(--space-xxxs) 0;
+    }
+
+    .weatherInfo div:nth-child(1) {
+        grid-column: span 2;
+        grid-row: 1 / 4;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    #weatherImg {
+        max-width: 6rem;
+        height: auto;
+    }
+
+    #weatherDes,
+    #current-temp,
+    #humidity {
+        grid-column: span 4;
+    }
+
+    #weatherDes {
+        text-transform: capitalize;
+    }
+
+    img {
+        filter: drop-shadow(0 0 2px rgba(0, 0, 0, .3));
+        -webkit-filter: drop-shadow(0 0 2px rgba(0, 0, 0, .3));
+    }
+}
+
+.lineDivider {
+    grid-column: span 12;
+    fill: var(--color-white);
+    align-items: flex-end;
+    margin-bottom: -1px;
+}
+
+@media only screen and (max-width: 80rem) {
+    .img-bg {
+        background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)),
+            url('../img/beach-1440x960-xl2.jpg') no-repeat;
+    }
+}
+
+@media only screen and (max-width: 64rem) {
+    .img-bg {
+        background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)),
+            url('../img/beach-1280x853-lg2.jpg') no-repeat;
+        min-height: 650px;
+    }
+
+    .hero-img-txt {
+        grid-column: span 7;
+        padding: var(--component-padding);
+
+        h1 {
+            font-size: var(--text-display-3);
+        }
+    }
+
+    .current-weather {
+        grid-column: span 5;
+        padding: var(--component-padding);
+    }
+}
+
+@media only screen and (max-width: 48rem) {
+    .img-bg {
+        background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)),
+            url('../img/beach-1024x683-md2.jpg') no-repeat;
+    }
+
+    .hero-img-txt {
+        grid-column: span 12;
+        padding: 0 var(--component-padding);
+
+        h1 {
+            font-size: var(--text-display-3);
+        }
+    }
+
+    .current-weather {
+        grid-column: span 12;
+        padding: 0 var(--component-padding);
+    }
+}
+
+@media only screen and (max-width: 32rem) {
+
+    .hero-img-txt {
+
+        h1 {
+            font-size: var(--text-xxxxl);
+        }
+
+        p {
+            font-size: var(--text-md);
+        }
+    }
+}

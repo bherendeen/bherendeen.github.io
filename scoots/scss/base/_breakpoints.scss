@@ -1,0 +1,25 @@
+:root {
+    // breakpoints
+    --breakpoint-xs: 32rem;
+    // ~512px | mobile
+    --breakpoint-sm: 48rem;
+    // ~768px | mobile / tablet
+    --breakpoint-md: 64rem;
+    // ~1024px | tablet
+    --breakpoint-lg: 80rem;
+    // ~1280px | desktop
+    --breakpoint-xl: 90rem;
+    // ~1440px | desktop
+
+    /* layout width */
+    --width-xs: 32rem;
+    /* ~512px */
+    --width-sm: 48rem;
+    /* ~768px */
+    --width-md: 64rem;
+    /* ~1024px */
+    --width-lg: 80rem;
+    /* ~1280px */
+    --width-xl: 90rem;
+    /* ~1440px */
+}

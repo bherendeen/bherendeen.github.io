@@ -1,0 +1,97 @@
+main {
+
+    section {
+        margin-top: var(--space-xxxl);
+
+        .rental {
+            grid-column: 2 / span 10;
+            gap: var(--space-md);
+
+            h2 {
+                grid-column: span 12;
+                margin-bottom: var(--space-xs);
+            }
+
+            div:nth-child(-n+4) {
+                grid-column: span 4;
+                height: var(--space-md) 0;
+                align-items: center;
+                border: .1rem solid var(--color-contrast-low);
+                border-radius: var(--radius-sm);
+                -webkit-border-radius: var(--radius-sm);
+                -moz-border-radius: var(--radius-sm);
+                -ms-border-radius: var(--radius-sm);
+                -o-border-radius: var(--radius-sm);
+                transition: .3s;
+                -webkit-transition: .3s;
+                -moz-transition: .3s;
+                -ms-transition: .3s;
+                -o-transition: .3s;
+                box-shadow: var(--shadow-1);
+
+                &:hover {
+                    border-color: var(--color-primary);
+                    box-shadow: var(--shadow-2);
+                }
+
+                div {
+                    width: 100%;
+                    border: 0;
+                }
+
+                h3 {
+                    padding: var(--space-xs) 0;
+                    text-align: center;
+                    background-color: var(--color-primary);
+                    color: var(--color-white);
+                    font-weight: var(--text-bold);
+                }
+
+                span {
+                    margin: var(--space-xxxs) 0;
+                    padding: var(--space-md);
+                }
+            }
+
+            div:nth-child(n+5) {
+                grid-column: span 12;
+                align-items: center;
+            }
+
+            a {
+                margin: var(--space-md) var(--space-md) 0 0;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 64rem) {
+
+    main {
+
+        section {
+
+            .rental {
+
+                div:nth-child(-n+4) {
+                    grid-column: span 6;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 48rem) {
+    main {
+
+        section {
+
+            .rental {
+
+                div:nth-child(-n+4) {
+                    grid-column: span 12;
+                }
+            }
+        }
+    }
+}

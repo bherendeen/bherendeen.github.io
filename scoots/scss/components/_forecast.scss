@@ -1,0 +1,40 @@
+// five-day forecast
+.forecast {
+    grid-column: 4 / span 6;
+    margin-top: var(--space-lg);
+    padding: var(--component-padding);
+
+    .day {
+        justify-content: space-between;
+        text-align: center;
+        font-size: var(--text-md);
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    ul {
+        margin-top: var(--space-xl);
+        list-style: none;
+    }
+
+    img {
+        max-width: 4rem;
+        filter: drop-shadow(0 0 2px rgba(0, 0, 0, .3));
+        -webkit-filter: drop-shadow(0 0 2px rgba(0, 0, 0, .3));
+    }
+
+}
+
+@media only screen and (max-width: 64rem) {
+    .forecast {
+        grid-column: 3 / span 8;
+    }
+}
+
+@media only screen and (max-width: 48rem) {
+    .forecast {
+        grid-column: span 12;
+    }
+}

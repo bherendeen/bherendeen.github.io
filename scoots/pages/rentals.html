@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="~Scoots - Rent Vehicles to Explore Cozumel">
-    <title>~Scoots | Rent Vehicles to Explore Cozumel</title>
+    <meta name="description" content="~Scoots - Vehicle Rental Information">
+    <title>~Scoots | Vehicle Rental Information</title>
     <!--favicon-->
 
     <link rel="stylesheet" href="../css/styles.css">
@@ -15,7 +15,7 @@
     <div class="grid-main" id="toTop">
         <header>
             <nav>
-                <a href="#">
+                <a href="../">
                     <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 150">
                         <path
                             d="M260.3 126.7c-3.4 1.4-7.1 2.1-11.3 2.1-4 0-7.9-.8-11.4-2.3-3.6-1.6-6.7-3.7-9.4-6.4s-4.8-5.9-6.4-9.5c-1.6-3.6-2.3-7.4-2.3-11.5s.8-7.9 2.3-11.6c1.5-3.7 3.7-6.8 6.4-9.6 2.7-2.7 5.8-4.8 9.4-6.4 3.6-1.6 7.4-2.3 11.4-2.3 4.2 0 8 .7 11.3 2.1 3.4 1.4 6.4 3.4 9.1 5.8l15.2-14.7-.4-.4c-4.4-4.3-9.7-7.8-15.8-10.3-6.1-2.5-12.5-3.8-19.4-3.8s-13.4 1.3-19.5 4c-6.1 2.6-11.5 6.3-16.1 10.9-4.6 4.6-8.2 10-10.9 16.3-2.7 6.2-4 12.9-4 19.9 0 7.1 1.3 13.7 4 19.8 2.7 6.2 6.3 11.6 10.9 16.2 4.6 4.6 9.9 8.2 16.1 10.9 6.1 2.6 12.6 4 19.5 4s13.3-1.3 19.4-3.8c6.1-2.5 11.3-5.9 15.8-10.3l.4-.4-15.2-14.7c-2.7 2.6-5.7 4.6-9.1 6z" />
@@ -24,12 +24,12 @@
                     </svg>
                 </a>
                 <ul class="nav-links">
-                    <li><a class="link" href="pages/rentals.html">Rentals</a></li>
-                    <li><a class="link" href="pages/reservations.html">Reservations</a></li>
-                    <li><a class="link" href="pages/tours.html">Tours</a></li>
-                    <li><a class="link" href="pages/contact.html">Contact</a></li>
+                    <li><a class="active" href="rentals.html">Rentals</a></li>
+                    <li><a class="link" href="reservations.html">Reservations</a></li>
+                    <li><a class="link" href="tours.html">Tours</a></li>
+                    <li><a class="link" href="contact.html">Contact</a></li>
                     <li class="nav-divider" aria-hidden="true"></li>
-                    <li><a class="btn btn-primary" href="pages/reservations.html">Rent Now</a></li>
+                    <li><a class="btn btn-primary" href="reservations.html">Rent Now</a></li>
                 </ul>
                 <div class="burger">
                     <div class="line1"></div>
@@ -39,95 +39,150 @@
             </nav>
         </header>
         <main>
-            <div class="grid-full img-bg">
-                <div class="flex flex-column hero-img-txt">
-                    <h1>Your<br>Adventure<br>Awaits</h1>
-                    <p>Rent your vehicle today and explore beautiful Cozumel</p>
-                    <a class="btn btn-primary" href="pages/reservations.html">Rent Now</a>
-                </div>
-                <div class="flex flex-column current-weather">
-                    <div class="flex flex-column">
-                        <span>Current Conditions</span>
-                        <hr>
-                        <div class="grid-sm weatherInfo">
-                            <div class="flex">
-                                <img src="" alt="" id="weatherImg">
+            <div class="grid-full product">
+                <h1>Rentals</h1>
+                <p>Check out our rental information below.</p>
+                <section>
+                    <div class="grid-full productInfo">
+                        <img src="#" alt="#" id="img1">
+                        <div>
+                            <h2 id="vName1"></h2>
+                            <div class="grid-sm">
+                                <p>Vehicle Information</p>
+                                <span id="maxPerson1"></span>
+                                <span id="ccEngine1"></span>
+                                <span id="color1"></span>
+                                <span id="transmission1"></span>
+                                <p>Reservartion</p>
+                                <span id="resHalf1"></span>
+                                <span id="resFull1"></span>
+                                <p>Walk-in</p>
+                                <span id="walkHalf1"></span>
+                                <span id="walkFull1"></span>
                             </div>
-                            <span id="weatherDes"></span>
-                            <span id="current-temp"></span>
-                            <span id="humidity"></span>
                         </div>
                     </div>
-                </div>
-                <div class="flex lineDivider">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 130">
-                        <path
-                            d="M0 1l48 15.9c48 15.9 144 47.7 240 68.8 96 21.6 192 31.5 288 37.2 96 5.3 192 5.3 288-15.9 96-21.6 192-63.3 288-74.2s192 10.9 240 21.2l48 10.6V130H0V1z" />
-                    </svg>
-                </div>
+                    <div class="grid-full productInfo">
+                        <img src="#" alt="#" id="img2">
+                        <div>
+                            <h2 id="vName2"></h2>
+                            <div class="grid-sm">
+                                <p>Vehicle Information</p>
+                                <span id="maxPerson2"></span>
+                                <span id="ccEngine2"></span>
+                                <span id="color2"></span>
+                                <span id="transmission2"></span>
+                                <p>Reservartion</p>
+                                <span id="resHalf2"></span>
+                                <span id="resFull2"></span>
+                                <p>Walk-in</p>
+                                <span id="walkHalf2"></span>
+                                <span id="walkFull2"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-full productInfo">
+                        <img src="#" alt="#" id="img3">
+                        <div>
+                            <h2 id="vName3"></h2>
+                            <div class="grid-sm">
+                                <p>Vehicle Information</p>
+                                <span id="maxPerson3"></span>
+                                <span id="ccEngine3"></span>
+                                <span id="color3"></span>
+                                <span id="transmission3"></span>
+                                <p>Reservartion</p>
+                                <span id="resHalf3"></span>
+                                <span id="resFull3"></span>
+                                <p>Walk-in</p>
+                                <span id="walkHalf3"></span>
+                                <span id="walkFull3"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-full productInfo">
+                        <img src="#" alt="#" id="img4">
+                        <div>
+                            <h2 id="vName4"></h2>
+                            <div class="grid-sm">
+                                <p>Vehicle Information</p>
+                                <span id="maxPerson4"></span>
+                                <span id="ccEngine4"></span>
+                                <span id="color4"></span>
+                                <span id="transmission4"></span>
+                                <p>Reservartion</p>
+                                <span id="resHalf4"></span>
+                                <span id="resFull4"></span>
+                                <p>Walk-in</p>
+                                <span id="walkHalf4"></span>
+                                <span id="walkFull4"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-full productInfo">
+                        <img src="#" alt="#" id="img5">
+                        <div>
+                            <h2 id="vName5"></h2>
+                            <div class="grid-sm">
+                                <p>Vehicle Information</p>
+                                <span id="maxPerson5"></span>
+                                <span id="ccEngine5"></span>
+                                <span id="color5"></span>
+                                <span id="transmission5"></span>
+                                <p>Reservartion</p>
+                                <span id="resHalf5"></span>
+                                <span id="resFull5"></span>
+                                <p>Walk-in</p>
+                                <span id="walkHalf5"></span>
+                                <span id="walkFull5"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-full productInfo">
+                        <img src="#" alt="#" id="img6">
+                        <div>
+                            <h2 id="vName6"></h2>
+                            <div class="grid-sm">
+                                <p>Vehicle Information</p>
+                                <span id="maxPerson6"></span>
+                                <span id="ccEngine6"></span>
+                                <span id="color6"></span>
+                                <span id="transmission6"></span>
+                                <p>Reservartion</p>
+                                <span id="resHalf6"></span>
+                                <span id="resFull6"></span>
+                                <p>Walk-in</p>
+                                <span id="walkHalf6"></span>
+                                <span id="walkFull6"></span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="grid-full infoServices">
+                        <p>Information and Services</p>
+                        <div>
+                            <ul>
+                                <li>A $50 security deposit is required to confirm reservations.</li>
+                                <li>A valid drivers license is required in hand at time of rental.</li>
+                                <li>No one under 12 years of age are allowed to ride on the scooters.</li>
+                                <li>Fuel charge not included.</li>
+                                <li>Unlimited mileage.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>Liability insurance is free of charge.</li>
+                                <li>Reservations rate requires 24 hour prior notification.</li>
+                                <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.
+                                </li>
+                                <li>Payment via Google Pay, cash, credit card, debit card, or PayPal.</li>
+                                <li>Rentals may be returned to either location.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
             </div>
-            <section class="grid-full">
-                <div class="grid-full rental">
-                    <h2>Rental Information</h2>
-                    <div class="flex flex-column">
-                        <div>
-                            <h3>Scooter</h3>
-                        </div>
-                        <span>Honda Metropolitan - 49cc</span>
-                        <span>Honda Dio - 110cc</span>
-                        <span>Honda PCX150 - 149cc</span>
-                    </div>
-                    <div class="flex flex-column">
-                        <div>
-                            <h3>Jeep</h3>
-                        </div>
-                        <span>Jeep Wrangler - 4 door</span>
-                        <span>Jeep Wrangler - 2 door</span>
-                    </div>
-                    <div class="flex flex-column">
-                        <div>
-                            <h3>ATV</h3>
-                        </div>
-                        <span>Honda Pioneer 1000 - 999cc</span>
-                    </div>
-                    <div class="flex">
-                        <a href="pages/reservations.html" class="btn btn-primary">Rent Now</a>
-                        <a class="link" href="pages/rentals.html">Learn More</a>
-                    </div>
-                </div>
-            </section>
-            <section class="grid-full">
-                <div class="forecast">
-                    <h2>Five-Day Forecast</h2>
-                    <ul class="flex day">
-                        <li>
-                            <p><span id=day1></span></p>
-                            <img src="#" alt="#" id="icon1">
-                            <p><span id="temp1"></span></p>
-                        </li>
-                        <li>
-                            <p><span id=day2></span></p>
-                            <img src="#" alt="#" id="icon2">
-                            <p><span id="temp2"></span></p>
-                        </li>
-                        <li>
-                            <p><span id=day3></span></p>
-                            <img src="#" alt="#" id="icon3">
-                            <p><span id="temp3"></span></p>
-                        </li>
-                        <li>
-                            <p><span id=day4></span></p>
-                            <img src="#" alt="#" id="icon4">
-                            <p><span id="temp4"></span></p>
-                        </li>
-                        <li>
-                            <p><span id=day5></span></p>
-                            <img src="#" alt="#" id="icon5">
-                            <p><span id="temp5"></span></p>
-                        </li>
-                    </ul>
-                </div>
-            </section>
         </main>
         <footer class="grid-full">
             <div class="logo">
@@ -140,15 +195,15 @@
             </div>
             <ul>
                 <li>Services</li>
-                <li><a class="link" href="pages/rentals.html">Rentals</a></li>
-                <li><a class="link" href="pages/reservations.html">Reservations</a></li>
-                <li><a class="link" href="pages/tours.html">Tours</a></li>
+                <li><a class="link" href="rentals.html">Rentals</a></li>
+                <li><a class="link" href="reservations.html">Reservations</a></li>
+                <li><a class="link" href="tours.html">Tours</a></li>
             </ul>
             <ul>
                 <li>About</li>
-                <li><a class="link" href="pages/404.html">Company</a></li>
-                <li><a class="link" href="pages/resources.html">Resources</a></li>
-                <li><a class="link" href="pages/contact.html">Contact</a></li>
+                <li><a class="link" href="404.html">Company</a></li>
+                <li><a class="link" href="resources.html">Resources</a></li>
+                <li><a class="link" href="contact.html">Contact</a></li>
             </ul>
             <address>
                 <span>Locations</span>
@@ -186,9 +241,9 @@
                         </svg></li>
                 </ul>
                 <ul class="flex">
-                    <li><a class="link" href="pages/404.html">Terms</a></li>
-                    <li><a class="link" href="pages/404.html">Privacy</a></li>
-                    <li><a class="link" href="pages/404.html">Cookies</a></li>
+                    <li><a class="link" href="404.html">Terms</a></li>
+                    <li><a class="link" href="404.html">Privacy</a></li>
+                    <li><a class="link" href="404.html">Cookies</a></li>
                 </ul>
             </div>
             <div class="update">
@@ -204,7 +259,7 @@
             </svg>
         </a>
     </div>
-    <script src="js/index.js"></script>
+    <script src="../js/rental.js"></script>
 </body>
 
 </html>

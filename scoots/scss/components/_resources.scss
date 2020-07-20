@@ -1,0 +1,32 @@
+.resources {
+    margin-top: var(--space-xxxl);
+    padding: var(--component-padding);
+    gap: var(--component-padding);
+
+    div {
+        grid-column: span 4;
+
+        * {
+            display: block;
+            margin-top: var(--space-sm);
+        }
+    }
+}
+
+@media only screen and (max-width: 64rem) {
+    .resources {
+
+        div {
+            grid-column: span 6;
+        }
+    }
+}
+
+@media only screen and (max-width: 48rem) {
+    .resources {
+
+        div {
+            grid-column: span 12;
+        }
+    }
+}

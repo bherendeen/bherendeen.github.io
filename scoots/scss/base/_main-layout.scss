@@ -1,0 +1,19 @@
+header,
+main,
+article,
+section,
+footer {
+    grid-column: span 12;
+}
+
+header {
+    z-index: 1;
+}
+
+#toTop {
+    scroll-behavior: smooth;
+}
+
+.disable {
+    cursor: not-allowed;
+}

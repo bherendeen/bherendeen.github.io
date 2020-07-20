@@ -1,0 +1,122 @@
+.product {
+
+    margin-top: var(--space-xxxl);
+
+    &>h1,
+    &>p {
+        grid-column: 2 / span 10;
+    }
+
+    section {
+        grid-column: span 12;
+        margin-top: 0;
+    }
+}
+
+.productInfo {
+
+    gap: var(--space-lg);
+    margin-top: var(--space-xxl);
+
+    img {
+        grid-column: 2 / span 5;
+    }
+
+    &>div {
+        grid-column: 7 / span 5;
+    }
+
+    h2 {
+        margin-bottom: var(--space-xs);
+    }
+
+    .grid-sm {
+        p {
+            grid-column: span 6;
+            margin: var(--space-xs) 0;
+            font-size: var(--text-lg);
+            text-align: center;
+            background-color: var(--color-primary);
+            color: var(--color-white);
+        }
+
+        span {
+            grid-column: span 3;
+            margin: var(--space-xs) 0;
+        }
+    }
+}
+
+.infoServices {
+
+    margin-top: var(--space-xxl);
+
+    p {
+        grid-column: 2 / span 10;
+        margin: var(--space-xs) 0;
+        font-size: var(--text-lg);
+        text-align: center;
+        background-color: var(--color-primary);
+        color: var(--color-white);
+    }
+
+    &>div:nth-child(2) {
+        grid-column: 2 / span 5;
+    }
+
+    &>div:nth-child(3) {
+        grid-column: 7 / span 5;
+    }
+
+    div {
+
+        margin-top: var(--space-md);
+        padding: var(--component-padding);
+
+        ul {
+            list-style-position: inside;
+        }
+    }
+}
+
+@media only screen and (max-width: 64rem) {
+    .productInfo {
+
+        img {
+            grid-column: 2 / span 4;
+        }
+
+        &>div {
+            grid-column: 6 / span 6;
+        }
+
+        h2 {
+            font-size: var(--text-xxl);
+        }
+    }
+
+    .infoServices {
+
+        &>div:nth-child(2) {
+            grid-column: 2 / span 10;
+        }
+
+        &>div:nth-child(3) {
+            grid-column: 2 / span 10;
+        }
+    }
+}
+
+@media only screen and (max-width: 48rem) {
+    .productInfo {
+
+        img,
+        &>div {
+            grid-column: 2 / span 10;
+        }
+
+        h2 {
+            font-size: var(--text-xl);
+        }
+    }
+}

@@ -1,0 +1,94 @@
+.tours {
+    article {
+        grid-column: 3 / span 8;
+        margin-top: var(--space-xxxl);
+
+        h2 {
+            margin: var(--space-lg) 0 var(--space-sm);
+        }
+
+        .right {
+            float: right;
+            margin: 0 0 var(--space-sm) var(--space-md);
+        }
+
+        .left {
+            float: left;
+            margin: 0 var(--space-md) var(--space-sm) 0;
+        }
+
+        .right,
+        .left {
+            max-width: 540px;
+            height: auto;
+        }
+
+        p {
+            text-indent: var(--space-md);
+            margin-bottom: var(--space-sm);
+        }
+
+        .facts {
+            gap: 2rem;
+
+            p {
+                grid-column: span 3;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 80rem) {
+    .tours {
+        article {
+
+            .right,
+            .left {
+                max-width: 420px;
+            }
+
+        }
+
+    }
+}
+
+@media only screen and (max-width: 64rem) {
+
+    .tours {
+        article {
+            grid-column: 2 / span 10;
+
+        }
+
+    }
+}
+
+@media only screen and (max-width: 48rem) {
+
+    .tours {
+        article {
+            grid-column: 2 / span 10;
+
+            .right,
+            .left {
+                float: none;
+                margin: 0;
+                max-width: 100%;
+            }
+
+            p {
+                margin-top: var(--space-md);
+            }
+
+            .facts {
+
+                p {
+                    grid-column: span 6;
+                }
+            }
+
+        }
+
+    }
+}

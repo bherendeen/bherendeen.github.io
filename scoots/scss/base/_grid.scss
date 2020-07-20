@@ -1,0 +1,29 @@
+// grid
+.grid-main {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(25px, 8.3333%));
+}
+
+.grid-full {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 8.3333%));
+}
+
+.grid-lg {
+    display: grid;
+    grid-template-columns: repeat(10, minmax(0, 10%));
+}
+
+.grid-md {
+    display: grid;
+    grid-template-columns: repeat(8, minmax(0, 12.5%));
+}
+
+.grid-sm {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 16.6666%));
+}
+
+.grid-only {
+    display: grid;
+}
