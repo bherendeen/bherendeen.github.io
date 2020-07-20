@@ -142,8 +142,6 @@ kbd kbd { font-size: 100%; font-weight: var(--text-bold); }
 
 hr { display: block; margin-top: calc(var(--space-unit) * 1.5); margin-bottom: calc(var(--space-unit) * 1.5); margin-left: auto; margin-right: auto; width: 100%; height: .1rem; background-color: var(--color-contrast-low); }
 
-abbr[title], abbr[data-original-title] { text-decoration: underline; -webkit-text-decoration: underline dotted; text-decoration: underline dotted; cursor: help; border-bottom: 0; -webkit-text-decoration-skip-ink: none; text-decoration-skip-ink: none; }
-
 /* TAGS */
 address { font-style: normal; line-height: inherit; }
 
