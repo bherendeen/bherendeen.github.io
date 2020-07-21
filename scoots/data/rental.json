@@ -2,7 +2,7 @@
     "rentals": [{
             "name": "Honda Metro Scooter",
             "maxPerson": 1,
-            "ccEngine": 49,
+            "engine": "49cc",
             "transmission": "Automatic",
             "color": "Yellow",
             "reservation": [{
@@ -18,7 +18,7 @@
         {
             "name": "Honda Dio Scooter",
             "maxPerson": 2,
-            "ccEngine": 110,
+            "engine": "110cc",
             "transmission": "Automatic",
             "color": "Blue",
             "reservation": [{
@@ -34,7 +34,7 @@
         {
             "name": "Honda PCX150 Scooter",
             "maxPerson": 2,
-            "ccEngine": 149,
+            "engine": "149cc",
             "transmission": "Automatic",
             "color": "Blue",
             "reservation": [{
@@ -50,7 +50,7 @@
         {
             "name": "Honda Pioneer ATV",
             "maxPerson": 4,
-            "ccEngine": 999,
+            "engine": "999cc",
             "transmission": "Automatic",
             "color": "Red/Black",
             "reservation": [{
@@ -66,8 +66,8 @@
         {
             "name": "Jeep Wrangler - 4 door",
             "maxPerson": 5,
-            "engine": 250,
-            "transmission": "Manual",
+            "engine": "250hp",
+            "transmission": "Automatic",
             "color": "Black",
             "reservation": [{
                 "halfDay": 70,
@@ -82,8 +82,8 @@
         {
             "name": "Jeep Wrangler - 2 door",
             "maxPerson": 4,
-            "engine": 250,
-            "transmission": "Manual",
+            "engine": "250hp",
+            "transmission": "Automatic",
             "color": "Black",
             "reservation": [{
                 "halfDay": 60,
