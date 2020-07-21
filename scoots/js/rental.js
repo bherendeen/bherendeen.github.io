@@ -10,7 +10,7 @@ fetch(apiURL)
         rental.forEach(vehicleRental => {
             document.getElementById(`vName${i + 1}`).textContent = `${vehicleRental.name}`;
             document.getElementById(`maxPerson${i + 1}`).textContent = `Max Persons: ${vehicleRental.maxPerson}`;
-            document.getElementById(`ccEngine${i + 1}`).textContent = `Engine: ${vehicleRental.ccEngine}cc`;
+            document.getElementById(`engine${i + 1}`).textContent = `Engine: ${vehicleRental.engine}`;
             document.getElementById(`color${i + 1}`).textContent = `Color: ${vehicleRental.color}`;
             document.getElementById(`transmission${i + 1}`).textContent = `Transmission: ${vehicleRental.transmission}`;
             document.getElementById(`resHalf${i + 1}`).textContent = `Half-Day (3hr): $${vehicleRental.reservation[0].halfDay}`;
